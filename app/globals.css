@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Leaflet base styles for map rendering */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #090d16;
+  font-family: inherit;
+}
+.leaflet-control-zoom {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: rgba(15, 23, 42, 0.8) !important;
+  backdrop-filter: blur(8px);
+}
+.leaflet-control-zoom a {
+  background-color: transparent !important;
+  color: #38bdf8 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.95) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid #0284c7 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.3) !important;
+}
+.leaflet-popup-tip {
+  background: #0f172a !important;
+}
+
+/* Custom radar animations */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+}
+
+/* Custom scrollbars for high-density ops decks */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}

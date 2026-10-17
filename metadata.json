@@ -1,0 +1,6 @@
+{
+  "name": "WIM-OS | West Istanbul Marina Operating System",
+  "description": "155,000m² Digital Twin of West Istanbul Marina with Gemini AI General Manager, VHF Ch. 72 Console, SEAL & MAKER engine, ada.legal, ada.finance (Paraşüt e-Fatura), and KVKK Vault.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
